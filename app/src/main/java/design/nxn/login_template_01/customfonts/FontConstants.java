@@ -9,9 +9,9 @@ import android.graphics.Typeface;
 
 public class FontConstants {
 
-    public static final String FONT_BOLD = "fonts/MavenPro-Bold.ttf";
-    public static final String FONT_NORMAL = "fonts/MavenPro-Regular.ttf";
-    public static final String FONT_MEDIUM = "fonts/MavenPro-Medium.ttf";
+    public static final String FONT_BOLD = "fonts/MavenPro_Bold.ttf";
+    public static final String FONT_NORMAL = "fonts/MavenPro_Regular.ttf";
+    public static final String FONT_MEDIUM = "fonts/MavenPro_Medium.ttf";
 
     public static Typeface getfontNormal(Context context) {
         return Typeface.createFromAsset(context.getAssets(), FontConstants.FONT_NORMAL);
