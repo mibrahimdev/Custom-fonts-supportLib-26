@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Login_template_01</string>
+    <string name="loading">Loading..</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="username">Username</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="dont_have_account">Don\'t have account?</string>
+    <string name="password">Password</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="birthday">Birthday</string>
+    <string name="already_have_account">Already have an account?</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="login_button_click">Login button clicked</string>
+    <string name="signup_button_click">Sign Up button clicked</string>
+    <string name="reset_password_button_clicked">Reset Password button clicked</string>
+    <string name="empty_username">Empty</string>
+    <string name="empty">Empty</string>
+</resources>
