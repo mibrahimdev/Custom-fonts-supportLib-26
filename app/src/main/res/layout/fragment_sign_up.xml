@@ -32,7 +32,8 @@
         android:gravity="center_vertical"
         android:padding="25dp">
 
-        <design.nxn.login_template_01.customfonts.MyTextView
+        <TextView
+            android:fontFamily="@font/app_font"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/sign_up"
@@ -60,7 +61,8 @@
                 android:layout_marginRight="20dp"
                 android:src="@drawable/ic_user" />
 
-            <design.nxn.login_template_01.customfonts.MyEditText
+            <android.support.v7.widget.AppCompatEditText
+                android:fontFamily="@font/app_font"
                 android:id="@+id/username_edittext"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -94,7 +96,8 @@
                 android:layout_marginRight="20dp"
                 android:src="@drawable/ic_email" />
 
-            <design.nxn.login_template_01.customfonts.MyEditText
+            <android.support.v7.widget.AppCompatEditText
+                android:fontFamily="@font/app_font"
                 android:id="@+id/email_edittext"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -129,7 +132,8 @@
                 android:layout_marginRight="20dp"
                 android:src="@drawable/ic_password" />
 
-            <design.nxn.login_template_01.customfonts.MyEditText
+            <android.support.v7.widget.AppCompatEditText
+                android:fontFamily="@font/app_font"
                 android:id="@+id/password_edittext"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -166,7 +170,8 @@
                 android:src="@drawable/ic_birthday"
                 android:clickable="false"/>
 
-            <design.nxn.login_template_01.customfonts.MyTextView
+            <TextView
+                android:fontFamily="@font/app_font"
                 android:id="@+id/birthday_edittext"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -215,7 +220,8 @@
             android:id="@+id/signup_button"
             android:text="@string/forgot_password">
 
-            <design.nxn.login_template_01.customfonts.MyTextView
+            <TextView
+                android:fontFamily="@font/app_font"
                 android:layout_width="wrap_content"
                 android:layout_height="40dp"
                 android:gravity="center"
@@ -240,7 +246,8 @@
             android:gravity="center"
             android:orientation="horizontal">
 
-            <design.nxn.login_template_01.customfonts.MyTextView
+            <TextView
+                android:fontFamily="@font/app_font"
                 android:layout_width="wrap_content"
                 android:layout_height="30dp"
                 android:background="@android:color/transparent"
@@ -259,7 +266,8 @@
                 android:onClick="signInClick"
                 android:text="@string/forgot_password">
 
-                <design.nxn.login_template_01.customfonts.MyTextView
+                <TextView
+                    android:fontFamily="@font/app_font"
                     android:layout_width="wrap_content"
                     android:layout_height="40dp"
                     android:gravity="center"

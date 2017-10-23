@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/content_login"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -42,7 +43,8 @@
                 android:layout_marginRight="20dp"
                 android:src="@drawable/ic_email" />
 
-            <design.nxn.login_template_01.customfonts.MyEditText
+            <android.support.v7.widget.AppCompatEditText
+                app:fontFamily="@font/app_font"
                 android:id="@+id/email_edittext"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -82,7 +84,8 @@
                 android:layout_marginRight="20dp"
                 android:src="@drawable/ic_password" />
 
-            <design.nxn.login_template_01.customfonts.MyEditText
+            <android.support.v7.widget.AppCompatEditText
+                app:fontFamily="@font/app_font"
                 android:id="@+id/password_edittext"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -119,9 +122,10 @@
                 android:clickable="true"
                 android:onClick="resetPasswordClick">
 
-                <design.nxn.login_template_01.customfonts.MyTextView
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="40dp"
+                    app:fontFamily="@font/app_font"
                     android:gravity="center"
                     android:text="@string/forgot_password"
                     android:textColor="@color/light_text"
@@ -147,9 +151,10 @@
                 android:clickable="true"
                 android:text="@string/forgot_password">
 
-                <design.nxn.login_template_01.customfonts.MyTextView
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="40dp"
+                    android:fontFamily="@font/app_font"
                     android:gravity="center"
                     android:text="@string/sign_in"
                     android:textColor="@color/white"
@@ -172,7 +177,8 @@
                 android:gravity="center"
                 android:orientation="horizontal">
 
-                <design.nxn.login_template_01.customfonts.MyTextView
+                <android.support.v7.widget.AppCompatEditText
+                    app:fontFamily="@font/app_font"
                     android:layout_width="wrap_content"
                     android:layout_height="30dp"
                     android:background="@android:color/transparent"
@@ -191,7 +197,8 @@
                     android:onClick="signUpClick"
                     android:text="@string/forgot_password">
 
-                    <design.nxn.login_template_01.customfonts.MyTextView
+                    <TextView
+                        android:fontFamily="@font/app_font"
                         android:layout_width="wrap_content"
                         android:layout_height="40dp"
                         android:gravity="center"
