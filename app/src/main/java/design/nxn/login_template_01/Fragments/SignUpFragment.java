@@ -1,22 +1,19 @@
 package design.nxn.login_template_01.Fragments;
 
-
 import android.app.DatePickerDialog;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.AppCompatEditText;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.DatePicker;
-
-import java.util.Calendar;
-
+import android.widget.TextView;
 import design.nxn.login_template_01.LoginActivity;
 import design.nxn.login_template_01.R;
 import design.nxn.login_template_01.Tools.MyTimeUtils;
-import design.nxn.login_template_01.customfonts.MyEditText;
-import design.nxn.login_template_01.customfonts.MyTextView;
+import java.util.Calendar;
 
 
 /**
@@ -50,16 +47,16 @@ public class SignUpFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 boolean ok = true;
-                if (((MyEditText) getView().findViewById(R.id.username_edittext)).getText().length() == 0) {
-                    ((MyEditText) getView().findViewById(R.id.username_edittext)).setError(getString(R.string.empty));
+                if (((AppCompatEditText) getView().findViewById(R.id.username_edittext)).getText().length() == 0) {
+                    ((AppCompatEditText) getView().findViewById(R.id.username_edittext)).setError(getString(R.string.empty));
                     ok = false;
                 }
-                if (((MyEditText) getView().findViewById(R.id.password_edittext)).getText().length() == 0) {
-                    ((MyEditText) getView().findViewById(R.id.password_edittext)).setError(getString(R.string.empty));
+                if (((AppCompatEditText) getView().findViewById(R.id.password_edittext)).getText().length() == 0) {
+                    ((AppCompatEditText) getView().findViewById(R.id.password_edittext)).setError(getString(R.string.empty));
                     ok = false;
                 }
-                if (((MyEditText) getView().findViewById(R.id.email_edittext)).getText().length() == 0) {
-                    ((MyEditText) getView().findViewById(R.id.email_edittext)).setError(getString(R.string.empty));
+                if (((AppCompatEditText) getView().findViewById(R.id.email_edittext)).getText().length() == 0) {
+                    ((AppCompatEditText) getView().findViewById(R.id.email_edittext)).setError(getString(R.string.empty));
                     ok = false;
                 }
                 if (ok)
@@ -80,7 +77,7 @@ public class SignUpFragment extends Fragment {
                         temp.set(Calendar.YEAR, year);
                         temp.set(Calendar.MONTH, monthOfYear);
                         temp.set(Calendar.DAY_OF_MONTH, dayOfMonth);
-                        ((MyTextView) getView().findViewById(R.id.birthday_edittext)).setText(MyTimeUtils.formatDate(temp.getTimeInMillis(), MyTimeUtils.BIRTHDAY_FORMAT));
+                        ((TextView) getView().findViewById(R.id.birthday_edittext)).setText(MyTimeUtils.formatDate(temp.getTimeInMillis(), MyTimeUtils.BIRTHDAY_FORMAT));
                     }
                 }, calendar.get(Calendar.YEAR), calendar.get(Calendar.MONTH), calendar.get(Calendar.DAY_OF_MONTH));
         dpd.show();

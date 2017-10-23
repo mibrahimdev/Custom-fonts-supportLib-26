@@ -1,16 +1,14 @@
 package design.nxn.login_template_01.Fragments;
 
-
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.AppCompatEditText;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
 import design.nxn.login_template_01.LoginActivity;
 import design.nxn.login_template_01.R;
-import design.nxn.login_template_01.customfonts.MyEditText;
 
 
 /**
@@ -38,8 +36,8 @@ public class ResetPasswordFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 boolean ok = true;
-                if (((MyEditText) getView().findViewById(R.id.email_edittext)).getText().length() == 0) {
-                    ((MyEditText) getView().findViewById(R.id.email_edittext)).setError(getString(R.string.empty));
+                if (((AppCompatEditText) getView().findViewById(R.id.email_edittext)).getText().length() == 0) {
+                    ((AppCompatEditText) getView().findViewById(R.id.email_edittext)).setError(getString(R.string.empty));
                     ok = false;
                 }
                 if (ok)
