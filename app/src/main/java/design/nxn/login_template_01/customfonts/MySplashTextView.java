@@ -2,7 +2,9 @@ package design.nxn.login_template_01.customfonts;
 
 import android.content.Context;
 import android.graphics.Typeface;
+import android.support.v4.content.res.ResourcesCompat;
 import android.util.AttributeSet;
+import design.nxn.login_template_01.R;
 
 /**
  * Created by one on 3/12/15.
@@ -26,15 +28,10 @@ public class MySplashTextView extends android.support.v7.widget.AppCompatTextVie
 
     private void init() {
         if (!isInEditMode()) {
-            Typeface tf;
-            switch (getTypeface().getStyle()) {
-                case Typeface.BOLD:
-                    tf=Typeface.createFromAsset(getContext().getAssets(), FontConstants.FONT_BOLD);
-                    break;
-                default:
-                    tf=Typeface.createFromAsset(getContext().getAssets(), FontConstants.FONT_NORMAL);
+            if (!isInEditMode()) {
+                Typeface tf = ResourcesCompat.getFont(getContext(), R.font.app_font);
+                setTypeface(tf);
             }
-            setTypeface(tf);
         }
     }
 
